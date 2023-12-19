@@ -1,0 +1,88 @@
+---
+title: "Sidebar"
+description: "The sidebar is a navigation element that is used to display links."
+---
+
+- Agents
+- Monitoring
+- Device Groups
+    - Remote Access
+    - Backups
+
+## Agents
+
+Under the Agents section, you will see a list of accessible agents.
+
+Based on permissions, clicking on the agent’s name will bring you to the device groups configured under the agent,
+while clicking on the menu button (the three dots) will bring up the options available to you for the selected agent.
+
+## Monitoring
+Under the Monitoring section, you will see early access components available from Cloud. Red’s monitoring tools. These are currently the same components available directly at https://logging.cloud.red.
+
+To see some of the early access dashboards, click on the menu icon (three lines) and select dashboard.
+
+
+## Device Groups
+Under the Devices Groups section, you will see a list of the accessible device groups.
+
+Based on permissions, clicking on the device groups’ name will bring you to the devices configured under the devices, while clicking on the menu button (the three dots) will bring up the options for the device.
+
+
+Device group options include (based on permissions):
+
+* Remote Management and Permissions
+* Backups
+* Schedules
+* GeoIP Update
+* Delete
+
+### Remote Management and Permissions
+Under the device groups’ remote management configuration view, based on permissions, you can configure remote access, SSO, and file transfers. Please see the application documentation regarding remote access for more information about these features and controls.
+
+### Backups
+Clicking the Device Group’s backups option will prompt you, asking which devices in the group for which to take an on-demand backup.
+
+
+### Schedules
+Clicking the Device Group’s schedules option will provide a pop-up, depending on permission, allowing you to configure how/when backups take place.
+
+### GeoIP Update
+Clicking the Device Group’s GeoIP option will provide a pop-up, depending on permission, to update the devices group’s devices GeoIP location databases. To perform the update, you would click the “Update” button. Console output shows you the in-process update occurring.
+
+
+### Delete
+Clicking the Device Group’s GeoIP delete will provide a pop-up, depending on permission, asking if you are sure you would like to remove the device group. Confirming this will remove the device group from the configuration.
+
+### Remote Access
+The Device Groups / Remote Access section provides a central hub to access devices in accordance with configured user permissions.
+
+When entering the interface, you can, according to your permissions, login to devices using WebSSH or access the TMUI. This can be done via ‘normal login’ (black icons), or ‘SSO Login’ (green icons).
+
+
+Normal Login will prompt you for username and password. SSO Login will automatically log a user in using a service account, aligned with the user-role they are allowed to use for the selected system.
+
+Please see the Cloud.Red Remote Access documentation for more information.
+
+### Backups
+The Device Groups / Backups section provides an interface for the backups Cloud.Red manages, no matter if the backups are configured to be stored on the agent or cloud storage (unless configured not to take backups).
+
+
+<Tip>
+    The Backups interface includes an interactive walk-through that can be started by clicking the help icon in the lower right-hand corner
+</Tip>
+
+
+
+The top row allows you to filter the backups by device, status, and schedule type (i.e., daily, weekly, monthly, etc.).
+
+
+The table presented has information about each of the backups and options to work with them (depending on permission).
+
+
+The “Actions” listed under each backup allow you to perform the following (depending on permission):
+
+Copy the Checksum
+
+Download the backup (will download to your PC)
+
+Restore backup (will push the backup back to the device – note this will not automatically restore to this backup)

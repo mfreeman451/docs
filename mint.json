@@ -59,6 +59,30 @@
         "introduction/overview",
         "getting-started/quickstart"]
     },
+    {
+      "group": "Onboarding",
+      "pages": [
+        {
+          "group": "Agents",
+          "icon": "object-subtract",
+            "pages": [
+              "/onboarding/agents/AWS", "/onboarding/agents/Azure", "/onboarding/agents/Hyper-V", "/onboarding/agents/VMWare", "/onboarding/agents/Monitoring"
+            ]
+        }
+      ]
+    },
+    {
+      "group": "Remote Access",
+        "pages": [
+            {
+            "group": "Remote Access",
+            "icon": "object-subtract",
+            "pages": [
+                "/remote-access/remote-access", "/remote-access/remote-access-requirements", "/remote-access/remote-access-configuration", "/remote-access/remote-access-usage"
+            ]
+            }
+        ]
+    },
     { "group": "Reference",
       "pages": [
         {
