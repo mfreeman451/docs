@@ -54,17 +54,18 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction/overview",
-        "getting-started/quickstart"]
+        "getting-started/quickstart"
+      ]
     },
     {
       "group": "Onboarding",
       "pages": [
         {
           "group": "Agents",
-          "icon": "object-subtract",
+          "icon": "user-tie",
             "pages": [
               "/onboarding/agents/AWS", "/onboarding/agents/Azure", "/onboarding/agents/Hyper-V", "/onboarding/agents/VMWare", "/onboarding/agents/Monitoring"
             ]
@@ -76,25 +77,50 @@
         "pages": [
             {
             "group": "Remote Access",
-            "icon": "object-subtract",
+            "icon": "shield-quartered",
             "pages": [
-                "/remote-access/remote-access", "/remote-access/remote-access-requirements", "/remote-access/remote-access-configuration", "/remote-access/remote-access-usage"
+              "/remote-access/remote-access-overview",
+              "/remote-access/remote-access-controls",
+              "/remote-access/remote-access-permissions",
+              "/remote-access/remote-access-data-collection",
+              "/remote-access/managed-BIG-IP-audit-log-collection",
+              "/remote-access/remote-access-configuration"
             ]
             }
         ]
+    },
+    {
+      "group": "Alerting",
+      "pages": [
+        {
+          "group": "F5 Alerting",
+          "icon": "bell",
+          "pages": [
+            "/alerting/f5-bigip-gtm-polling",
+            "/alerting/f5-bigip-gtm-traps",
+            "/alerting/f5-bigip-ltm-polling",
+            "/alerting/f5-bigip-system-polling",
+            "/alerting/f5-bigip-system-traps",
+            "/alerting/f5-f5os-controller-traps",
+            "/alerting/f5-f5os-partition-traps",
+            "/alerting/f5-f5os-system-polling",
+            "/alerting/f5-f5os-system-traps"
+          ]
+        }
+      ]
     },
     { "group": "Reference",
       "pages": [
         {
           "group": "Requirements",
-          "icon": "object-subtract",
+          "icon": "bars-progress",
           "pages": [
             "/requirements/agent-host", "/requirements/agent-connectivity", "/requirements/required-changes-for-F5", "/requirements/required-changes-for-NGINX"
           ]
         },
+        "reference/maintenance-periods",
         "reference/architecture",
-        "reference/security",
-        "reference/terminology"
+        "reference/security"
       ]
     },
     {
