@@ -96,15 +96,15 @@
           "group": "F5 Alerting",
           "icon": "bell",
           "pages": [
-            "/alerting/f5-bigip-gtm-polling",
-            "/alerting/f5-bigip-gtm-traps",
-            "/alerting/f5-bigip-ltm-polling",
-            "/alerting/f5-bigip-system-polling",
-            "/alerting/f5-bigip-system-traps",
-            "/alerting/f5-f5os-controller-traps",
-            "/alerting/f5-f5os-partition-traps",
-            "/alerting/f5-f5os-system-polling",
-            "/alerting/f5-f5os-system-traps"
+            "/alerting/f5-BIGIP-GTM-polling",
+            "/alerting/f5-BIGIP-GTM-traps",
+            "/alerting/f5-BIGIP-LTM-polling",
+            "/alerting/f5-BIGIP-system-polling",
+            "/alerting/f5-BIGIP-system-traps",
+            "/alerting/f5-F5OS-controller-traps",
+            "/alerting/f5-F5OS-partition-traps",
+            "/alerting/f5-F5OS-system-polling",
+            "/alerting/f5-F5OS-system-traps"
           ]
         }
       ]
@@ -118,7 +118,13 @@
             "/requirements/agent-host", "/requirements/agent-connectivity", "/requirements/required-changes-for-F5", "/requirements/required-changes-for-NGINX"
           ]
         },
-        "reference/maintenance-periods",
+        {
+          "group": "Maintenance Periods",
+          "icon": "calendar",
+            "pages": [
+                "/maintenance-periods/maintenance-scheduling", "/maintenance-periods/managing-maintenance-periods","removing-maintenance-periods"
+            ]
+        },
         "reference/architecture",
         "reference/security"
       ]
